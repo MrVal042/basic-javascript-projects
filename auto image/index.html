@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>auto image show</title>
+  <link rel="stylesheet" href="./auto.css">
 </head>
+
 <body>
-  
+  <article>
+    <img id="image" src="./img/1.jpg" alt="">
+    <h4 class="caption">hello image</h4>
+  </article>
+  <script>
+    // define image array
+    const images = [
+      ["1.jpg", "shaggy rug"],
+      ["2.jpg", "black/ash shaggy"],
+      ["3.jpg", "6x9 super niger"],
+      ["4x6.jpg", "4x6 shaggy"],
+      ["5x7.jpg", "5x7 shaggy"],
+      ["6x9.jpg", "6x9 mix coffer-brown shaggy "],
+      ["shaggy.jpg", "ash floopy shaggy"],
+      ["showcase.jpg", "meeting with ceo"],
+      ["Val.jpg", "Mr Val the coder"]
+    ];
+    //define an image file path 
+    const pathName = './img/'
+    let count = images.length - 1;
+    // change image in interval
+    setInterval(() => {
+      if (count !== images.length - 1) {
+        count++;
+      } else {
+        count = 0;
+      }
+      let currentImgSrc = pathName + images[count][0];
+      let imgTxt = images[count][1]
+      document.getElementById('image').src = currentImgSrc;
+      document.querySelector('.caption').innerHTML = imgTxt;
+    }, 1700);
+  </script>
 </body>
+
 </html>

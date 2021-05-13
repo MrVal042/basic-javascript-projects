@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>counter</title>
+  <!--- css styles-->
+  <style>
+    body {
+      padding: auto;
+      text-align: center;
+      text-transform: capitalize;
+
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    button {
+      text-align: center;
+      text-transform: capitalize;
+      padding: 0.5% 3%;
+    }
+
+    button:hover {
+      background-color: aqua;
+      border-radius: 7px;
+    }
+
+    button:active {
+      background-color: red;
+      border-radius: 7px;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h1>counter</h1>
+    <h1 id="display">0</h1>
+    <div>
+      <button id="decrease">decrease</button>
+      <button id="reset">reset</button>
+      <button id="increase">increase</button>
+    </div>
+  </section>
+
+  <!-- javascript -->
+  <script>
+    // quiry dom element
+    const display = document.getElementById('display');
+    const decrease = document.getElementById('decrease');
+    const reset = document.getElementById('reset');
+    const increase = document.getElementById('increase');
+    let value = display.innerHTML;
+
+    // add event listener
+    decrease.addEventListener('click', decreaseNum),
+      reset.addEventListener('click', returnDefault);
+    increase.addEventListener('click', increaseNum);
+
+    // check function
+    function check() {
+      if (value < 0) {
+        display.style.color = 'red';
+      } else if (value > 0) {
+        display.style.color = 'blue';
+      } else {
+        display.style.color = 'black'
+      }
+    }
+    let start = null;
+
+    // decrease function
+    function decreaseNum() {
+      clearInterval(start);
+      start = setInterval(() => {
+        value--;
+        display.innerHTML = value;
+        check();
+      }, 100)
+    }
+
+    // increase function
+    function increaseNum() {
+      clearInterval(start);
+      start = setInterval(() => {
+        value++;
+        display.innerHTML = value;
+        check();
+      }, 100)
+    }
+
+    // return to default function
+    function returnDefault() {
+      clearInterval(start);
+      start = null;
+      value = 0;
+      display.innerHTML = value;
+      check();
+    }
+
+
+    //
+  </script>
+</body>
+
+</html>

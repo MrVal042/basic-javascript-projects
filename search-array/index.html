@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+  <title>Search-array</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      text-align: center;
+      word-break: break-all;
+      padding: 0.1%;
+    }
+
+    .searchItem {
+      background-color: #e6f4f8;
+      width: 100%;
+      margin: 0;
+      padding: 1%;
+      border: 1px solid;
+    }
+
+    input {
+      margin: 10px 0 0;
+      padding: 0;
+    }
+
+    /* Result display */
+    .result {
+      width: 70%;
+      margin: 10px auto;
+      height: 1.2rem;
+      align-items: center;
+      text-align: center;
+      border-radius: 0.25rem;
+      text-transform: capitalize;
+      padding: 0 3%;
+    }
+
+    .danger {
+      background: #f8d7da;
+      color: #721c24;
+    }
+
+    .success {
+      background: #bee9c8;
+      color: #155724;
+    }
+
+    p {
+      margin-top: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="searchItem">
+    <input type="text" class='input' required>
+    <input type="submit" class="searchBtn" value=" Search ">
+    <h4 class="result "></h4>
+    <p id="showArray"></p>
+  </div>
+  <script>
+    // search an item in array
+    {
+      myArrays = ['Queen', 'blessing', 'loveth', 'Emeka', 'Martha', 'ebuka',
+        'Jude', 'Osmond', "BMW", "Volvo", "Golf", "Tayota", "Ford", 'Kelvin',
+        'Valentine', 'Solomon'
+      ];
+
+
+      const input = document.querySelector('.input');
+      const searchBtn = document.querySelector('.searchBtn');
+      const showResult = document.querySelector('.result');
+      const showArray = document.querySelector('#showArray');
+      searchBtn.addEventListener('click', () => {
+        search(input.value);
+      });
+
+      // display alert function.......
+      function displayResult(text, action) {
+        // display alert.......
+        showResult.textContent = text;
+        showResult.classList.add(`${action}`);
+        // remove alert .......
+        setTimeout(() => {
+          showResult.textContent = "";
+          showResult.classList.remove(`${action}`)
+          showArray.textContent = '';
+        }, 3000);
+      }
+
+      // Iterate Array
+      let txt = '';
+      let showMe = myArrays.forEach((value) => {
+        txt += value + ', ';
+      });
+
+      function search(x) {
+        showMe;
+        if (input.value) {
+          for (let i = 0; i < myArrays.length; i++) {
+            if (myArrays[i].toUpperCase() === x.toUpperCase()) {
+              displayResult(`${x} found at index  ${i}`, 'success');
+              showArray.textContent = `[${txt}]`;
+              break
+            } else {
+              // display alert.................
+              displayResult(`${x} Not found In the array bellow`, "danger");
+              showArray.textContent = `[${txt}]`;
+            }
+          }
+        } else {
+          // display alert.................
+          displayResult("No Input", 'danger')
+        }
+      }
+    }
+  </script>
+</body>
+</html>

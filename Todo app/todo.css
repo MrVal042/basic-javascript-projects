@@ -4,11 +4,11 @@ body{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   
-  /*make the list items unselectable */
+  /*make the list items unselectable 
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  user-select: none;*/ 
 }
 
 /******* header, input and add item button container  **********/
@@ -35,11 +35,11 @@ h3 {
   text-transform: capitalize;
   padding: 0 3%;
 }
-.alert-danger {
+.danger {
   background: #f8d7da;
   color: #721c24;
 }
-.alert-success {
+.success {
   background: #d4edda;
   color: #155724;
 }
@@ -200,7 +200,7 @@ footer{
   bottom: 0;
   width: 99%;
   padding: 1%;
-  font-size: 0.1rem;
+  font-size: 1rem;
   text-align: center;
   text-transform: capitalize;
   position: fixed;

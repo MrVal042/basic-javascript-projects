@@ -25,6 +25,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
+* Hat tip to W3C schools for bringing me this far from beginner to this level.
+* Special thanks to my boss Izuking, more grace and bless to you boss
+* I,m inspire by a wonderful instructor like John Smigla, Mosh Hamadani and co for the coding inspiration
 * etc

@@ -1,44 +1,19 @@
-//--check if user stay or come back again
+var x = 3;
+var y = 1;
+let sh = () => x === 5 ? console.log('true') : console.log('false');
 
-/*In index.html, add the following line just before the <script> element:
-
-<button myButton.onclick = function() {
-  setUserName();
-}>Change user</button>
-
-In main.js, place the following code at the bottom of the file, 
-exactly as it is written. This takes references to the new button and
-the heading, storing each inside variables:
-
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
-Add the function below to set the personalized greeting.
-This won't do anything yet, but this will change soon.
-
-function setUserName() {
-  let myName = prompt('Please enter your name.');
-  localStorage.setItem('name', myName);
-  myHeading.textContent = 'Mozilla is cool, ' + myName;
-}
-*/
-
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
-
-function setUserName() {
-  let myName = prompt('Please enter your name.');
-  if(!myName) {
-    setUserName();
+let man = () => {
+  if (x === 5) if (x === 6) {
+    console.log('x is 6');
   } else {
-    localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+    console.log('none is true');
+  } else {
+    console.log('x is not 5');
+    if (x === 3 && y === 2) {
+      console.log('x is 3 and y is 2');
+    } else {
+      console.log('both are false');
+    }
   }
 }
-
-/*if(!localStorage.getItem('name')) {
-  setUserName();
-} else {
-  let storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Mozilla is cool, ' + storedName;
-}
-*/
+man()

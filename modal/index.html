@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modal</title>
+  <style>
+    body {
+      padding: 8% 1%;
+      text-align: center;
+
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .root {
+      background-color: beige;
+      border-radius: 7px;
+      border: 1px solid bisque;
+      box-shadow: 3px 4px 2px 2px;
+      width: 50%;
+      margin: auto;
+    }
+
+    .modal {
+      border-radius: 7px;
+      box-shadow: 3px 4px 2px 2px;
+      background-color: beige;
+      display: none;
+      top: -40%;
+
+    }
+
+    h3 {
+      text-transform: capitalize;
+      border-radius: 7px 7px 0 0;
+      background-color: burlywood;
+      margin-top: 0;
+      width: 99%;
+      padding: 0.5%;
+    }
+
+    .modal h2 {
+      text-transform: capitalize;
+      text-transform: capitalize;
+      border-radius: 7px 7px 0 0;
+      background-color: burlywood;
+      margin-top: 0;
+      width: 100%;
+    }
+
+    span {
+      background-color: burlywood;
+      text-transform: none;
+      width: 8%;
+      height: 100%;
+      border-radius: 0 7px 0 0;
+      float: right;
+    }
+
+    span:hover {
+      background-color: red;
+      color: azure;
+    }
+
+    p {
+      font-size: 0.1rem;
+      margin: 0 0 3%;
+    }
+
+    .btn {
+      background-color: burlywood;
+      align-items: center;
+      padding: 1%;
+    }
+
+    button {
+      text-transform: capitalize;
+      background-color: beige;
+      border-radius: 7px;
+    }
+
+    button:hover {
+      background-color: aqua;
+      border-radius: 7px;
+    }
+
+    button:active {
+      background-color: red;
+      border-radius: 7px;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <article class="root">
+      <div>
+        <h3>let play</h3>
+      </div>
+      <p>modal is a hidden page or element that can be visible,
+        when you click it's event listener. click bellow to see how..
+      </p>
+      <div class="btn">
+        <button onclick="check()">click me</button>
+      </div>
+    </article>
+    <article class="modal">
+      <div>
+
+        <h2>modal 1 <span onclick="check()">x</span></h2>
+      </div>
+      <p>Hello there.... Am Modal, you called me where am hidden and you made me visible,
+        click me again to go back, i don't belong here..
+      </p>
+      <div class="btn">
+        <button onclick="check()">close</button>
+      </div>
+    </article>
+  </section>
+  <!--script-->
+  <script>
+    const root = document.querySelector('.root');
+    const modal = document.querySelector('.modal');
+
+    function check() {
+      if (modal.style.display === 'block') {
+        modal.style.display = 'none';
+        root.style.display = 'block';
+      } else {
+        modal.style.display = 'block';
+        root.style.display = 'none';
+      }
+    }
+  </script>
+
+</body>
+
+</html>

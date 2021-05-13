@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS Class | assesments</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+   <!-- Navbar ---------------------->
+   <div class="navbar">
+    <span class="menuCon">
+      <div id="menu_icon"></div>
+      <div id="menu_icon"></div>
+      <div id="menu_icon"></div>
+    </span>
+    <nav>
+      <ul>
+        <li class="Day1">DayOne</li>
+        <li class="Day2">DayTwo</li>
+        <li class="Day3">DayThree</li>
+      </ul>
+    </nav>
+   </div>
+   <!-- Navbar ends -->
+  <!---alert display-->
+  <p class="alert"></p>
+  <!--Day 1 Assesment------->
+  <h1>Day 1 ==> Sign Up</h1>
+  <hr>
+  <section>
+    <form>
+      <h1>Log In</h1>
+      <input type="text" placeholder=" User name or Email" required>
+      <input type="password" placeholder="Enter  password" required>
+      <div class="form-div">
+        <a href="">Forgot password</a>
+        <a href="">Create account</a>
+        <input type="submit" value="Log In" onclick="addNavBar()">
+      </div>
+    </form>
+  </section>
+  <hr>
+  <section>
+    <form>
+      <h1>Sign up</h1>
+      <input type="text" placeholder=" Enter First Name" required>
+      <input type="text" placeholder=" Enter Last Name" required>
+      <input type="text" placeholder="(+234)  07065208250">
+      <input type="email" placeholder=" Email" required>
+      <input type="password" placeholder="Enter  password" required>
+      <input type="password" placeholder="Confirm password" required>
+      <div>
+        <input type="checkbox" name="remember" value="remember">
+        <p>Remember password.</p>
+        <input type="submit" value="Sign up">
+      </div>
+    </form>
+  </section>
+
+  <!--Day 2 Assesment------->
+  <h1>Day 2</h1>
+  <hr>
+  <!--Payments Info-------------------->
+  <br>
+  <h4>day2 B ==> Payments Info</h4>
+  <form action="#">
+    <h3>Payments Info</h3>
+    <input type="text" name="name" placeholder="Cardholder Name" required>
+    <input type="text" name="email" placeholder="Enter Email" required>
+    <input type="text" name="card_number" placeholder="Card Number" required>
+    <div class="form-div">
+      <span>Expiry <select id="year" name="Age">
+          <option value="1">2021</option>
+          <option value="2">2022</option>
+          <option value="3">2023</option>
+          <option value="4">2024</option>
+          <option value="5">2025</option>
+          <option value="6">2026</option>
+          <option value="7">2027</option>
+          <option value="8">2028</option>
+          <option value="9">2029</option>
+          <option value="10">2030</option>
+          <option value="11">2031</option>
+          <option value="12">2032</option>
+          <option value="13">2033</option>
+          <option value="14">2034</option>
+          <option value="15">2035</option>
+        </select></span>
+      <span>Date <select id="date" name="Age">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></span>
+      <span>CVV <input style="width:30px;outline: none;" type="dropdown" name="paswrd"></span>
+    </div>
+    <div class="form-div">
+      <button>BACK</button>
+      <button>NEXT >></button>
+    </div>
+  </form>
+
+  <!--Personal Infor-------------------->
+  <br>
+  <h4>day2 A ==> Personal Infor</h4>
+  <br>
+  <section class="container">
+    <div class="card grid">
+      <div class="profile-imgCon">
+        <img src="./img/engr val.jpg">
+      </div>
+      <div class="profile-txtCon">
+        <h2>Engr Val</h2>
+        <h4>Electrical Engineer</h4>
+        <p>Lorem ipsum dolor sit amet, <br>consectetur Lorem ipsum dolor.</p>
+        <a href="#">read more</a>
+      </div>
+    </div>
+    <div class="card grid">
+      <div class="profile-imgCon">
+        <img src="./img/ebuka.jpg">
+      </div>
+      <div class="profile-txtCon">
+        <h2>Ebuka Odo</h2>
+        <h4>Interior Designer</h4>
+        <p>Lorem ipsum dolor sit amet, <br>consectetur Lorem ipsum dolor.</p>
+        <a href="#">read more</a>
+      </div>
+    </div>
+    <div class="card grid">
+      <div class="profile-imgCon">
+        <img src="./img/Tochi.jpg">
+      </div>
+      <div class="profile-txtCon">
+        <h2>Engr Jonas</h2>
+        <h4>Civil Engineer</h4>
+        <p>Lorem ipsum dolor sit amet, <br>consectetur Lorem ipsum dolor.</p>
+        <a href="#">read more</a>
+      </div>
+    </div>
+  </section>
+  <!--Online Shoping Cart-------------------->
+  <h4>day2 C ==>Online Shoping Cart</h4>
+  <br>
+
+  <section class="shop-container grid grid-5c">
+    <div class="shop-card">
+      <div class="shop-imgCon">
+        <img src="./img/supher cushion.jpg">
+      </div>
+      <div class="shop-txtCon">
+        <h1>Supher Cushion</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+        <span class="form-div">
+          <h4>$10.5</h4>
+          <h4>Ꞥ360,453.00</h4>
+        </span>
+        <button class="cart">ADD TO CART</button>
+      </div>
+    </div>
+    <div class="shop-card">
+      <div class="shop-imgCon">
+        <img src="./img/ash cushion.jpg">
+      </div>
+      <div class="shop-txtCon">
+        <h1>Mango Cushion</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+        <span class="form-div">
+          <h4>$120.15</h4>
+          <h4>Ꞥ420,456.15</h4>
+        </span>
+        <button class="cart">ADD TO CART</button>
+      </div>
+
+    </div>
+    <div class="shop-card">
+      <div class="shop-imgCon">
+        <img src="./img/nokia .png">
+      </div>
+      <div class="shop-txtCon">
+        <h1>Nokia Mk2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+        <span class="form-div">
+          <h4>$90.15</h4>
+          <h4>Ꞥ175,320.15</h4>
+        </span>
+        <button class="cart">ADD TO CART</button>
+      </div>
+    </div>
+    <div class="shop-card">
+      <div class="shop-imgCon">
+        <img src="./img/Samsung A20s.jpg">
+      </div>
+      <div class="shop-txtCon">
+        <h1>Samsung A20s</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+        <span class="form-div">
+          <h4>$0.05</h4>
+          <h4>Ꞥ900.15</h4>
+        </span>
+        <button class="cart">ADD TO CART</button>
+      </div>
+
+    </div>
+    <div class="shop-card">
+      <div class="shop-imgCon">
+        <img src="./img/Shaggy.jpg">
+      </div>
+      <div class="shop-txtCon">
+        <h1>Floopy Shaggy</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+        <span class="form-div">
+          <h4>$20.15</h4>
+          <h4>Ꞥ7,450.15</h4>
+        </span>
+        <button class="cart">ADD TO CART</button>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <!--Day 3 Assesment------->
+  <h1>Day 3 ==> Profile card</h1>
+  <hr>
+  <main>
+
+   <!-- Navbar ---------------------->
+   <div class="navbar">
+    <span class="menuCon">
+      <div id="menu_icon"></div>
+      <div id="menu_icon"></div>
+      <div id="menu_icon"></div>
+    </span>
+    <nav>
+      <ul>
+        <li class="home">Home</li>
+        <li class="about">About</li>
+        <li class="LogIn">Log In</li>
+      </ul>
+    </nav>
+   </div>
+   <!-- Navbar ends -->
+    <!--Top picks for you--->
+    <section>
+      <h3><strong>Top picks for you</strong><a href="" id="see_all">See all</a></h3>
+      <div class="shop-container grid grid-5c">
+        <div class="shop-card">
+          <div class="shop-imgCon">
+            <img src="./img/2.jpg">
+          </div>
+          <div class="shop-txtCon">
+            <h1>4x6 US Rug</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+            <span class="form-div">
+              <h4>$20.15</h4>
+              <h4>Ꞥ20.15</h4>
+            </span>
+            <button class="cart">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-card">
+          <div class="shop-imgCon">
+            <img src="./img/nokia .png">
+          </div>
+          <div class="shop-txtCon">
+            <h1>Nokia Mk2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+            <span class="form-div">
+              <h4>$90.15</h4>
+              <h4>Ꞥ175,320.15</h4>
+            </span>
+            <button class="cart">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-card">
+          <div class="shop-imgCon">
+            <img src="./img/3.jpg">
+          </div>
+          <div class="shop-txtCon">
+            <h1>6x9 Supa9Ja Rug</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+            <span class="form-div">
+              <h4>$20.15</h4>
+              <h4>Ꞥ20.15</h4>
+            </span>
+            <button class="cart">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-card">
+          <div class="shop-imgCon">
+            <img src="./img/1.jpg">
+          </div>
+          <div class="shop-txtCon">
+            <h1>4x6 Germany use</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+            <span class="form-div">
+              <h4>$20.15</h4>
+              <h4>Ꞥ20.15</h4>
+            </span>
+            <button class="cart">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-card">
+          <div class="shop-imgCon">
+            <img src="./img/Samsung A20s.jpg">
+          </div>
+          <div class="shop-txtCon">
+            <h1>Samsung A20s</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+            <span class="form-div">
+              <h4>$0.05</h4>
+              <h4>Ꞥ900.15</h4>
+            </span>
+            <button class="cart">ADD TO CART</button>
+          </div>
+
+        </div>
+        <div class="shop-card">
+          <div class="shop-imgCon">
+            <img src="./img/4x6.jpg">
+          </div>
+          <div class="shop-txtCon">
+            <h1>4x6 London use</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+            <span class="form-div">
+              <h4>$20.15</h4>
+              <h4>Ꞥ20.15</h4>
+            </span>
+            <button class="cart">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!--Recently viewed----------->
+    <section>
+      <h3><strong>Recently viewed</strong><a href="" id="see_all">See all</a></h3>
+      <div class="shop-container grid grid-5c">
+        <div class="shop-card">
+          <div class="shop-imgCon">
+            <img src="./img/nokia .png">
+          </div>
+          <div class="shop-txtCon">
+            <h1>Nokia Mk2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+            <span class="form-div">
+              <h4>$90.15</h4>
+              <h4>Ꞥ175,320.15</h4>
+            </span>
+            <button class="cart">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-card">
+          <div class="shop-imgCon">
+            <img src="./img/Shaggy.jpg">
+          </div>
+          <div class="shop-txtCon">
+            <h1>4x6 US Rug</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+            <span class="form-div">
+              <h4>$20.15</h4>
+              <h4>Ꞥ20.15</h4>
+            </span>
+            <button class="cart">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-card">
+          <div class="shop-imgCon">
+            <img src="./img/1.jpg">
+          </div>
+          <div class="shop-txtCon">
+            <h1>4x6 Germany use</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+            <span class="form-div">
+              <h4>$20.15</h4>
+              <h4>Ꞥ20.15</h4>
+            </span>
+            <button class="cart">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-card">
+          <div class="shop-imgCon">
+            <img src="./img/2.jpg">
+          </div>
+          <div class="shop-txtCon">
+            <h1>4x6 US Rug</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+            <span class="form-div">
+              <h4>$20.15</h4>
+              <h4>Ꞥ20.15</h4>
+            </span>
+            <button class="cart">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-card">
+          <div class="shop-imgCon">
+            <img src="./img/4x6.jpg">
+          </div>
+          <div class="shop-txtCon">
+            <h1>4x6 London use</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+            <span class="form-div">
+              <h4>$20.15</h4>
+              <h4>Ꞥ20.15</h4>
+            </span>
+            <button class="cart">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-card">
+          <div class="shop-imgCon">
+            <img src="./img/Samsung A20s.jpg">
+          </div>
+          <div class="shop-txtCon">
+            <h1>Samsung A20s</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam?</p>
+            <span class="form-div">
+              <h4>$0.05</h4>
+              <h4>Ꞥ900.15</h4>
+            </span>
+            <button class="cart">ADD TO CART</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <hr>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

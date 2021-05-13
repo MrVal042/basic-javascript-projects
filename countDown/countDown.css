@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 5%;
+   /*make the list items unselectable */
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+section {
+  height: 310px;
+  padding: 1%;
+  border: 0.1px solid black;
+}
+
+article {
+  float: left;
+  height: 93%;
+  padding: 1%;
+  text-align: center;
+}
+
+/* image container*/
+#imgCont {
+  display: block;
+  width: 30%;
+}
+
+#imgCont>img {
+  display: block;
+  width: 98%;
+  height: 98%;
+  padding: 1%;
+}
+
+/* promo info display container*/
+#promoCont {
+  display: grid;
+  width: 66%;
+}
+
+h1 {
+  color: blue;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+#promo {
+  text-transform: capitalize;
+  font-size: 0.01rem;
+  margin: 1%;
+}
+
+p {
+  background-color: rgba(250, 244, 244, 0.39);
+  font-size: 0.01rem;
+  padding: 0;
+}
+
+/* time display container*/
+#timeCont {
+  margin: 0;
+  padding: 2%;
+}
+
+.deadlineFormat {
+  background-color: black;
+  color: whitesmoke;
+  width: 15%;
+  margin: 0 3.5%;
+  padding: 1%;
+  float: left;
+}
+
+h3 {
+  margin: 0;
+}
+
+span {
+  font-size: 0.1rem;
+}
+
+@media only screen and (max-width:570px) {
+  body {
+    padding: 1%;
+  }
+
+  section {
+    height: 550px;
+    padding: 1%;
+    border: 0.1px solid black;
+  }
+
+  /* image container*/
+  #imgCont {
+    width: 98%;
+    height: 250px;
+  }
+
+  /* promocontainer*/
+  #promoCont {
+    width: 98%;
+    height: 250px;
+  }
+}

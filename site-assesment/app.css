@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  background: snow;
+  margin: 0;
+}
+
+body>h4 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #0f0d9e;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 12px;
+  margin: 0;
+}
+
+a:hover,
+button:hover,
+form input[type='submit']:hover {
+  color: #ec0914;
+  transform: scale(1.09);
+}
+
+h2,
+h4,
+p,
+hr {
+  padding: auto;
+  margin: 0;
+  width: auto;
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar {
+  background: #333;
+  color: #fff;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0.15%;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-between;
+  border-bottom: #e8491d 3px solid;
+}
+
+.menuCon {
+  padding: 0.5% 0;
+  width: 2%;
+  height: 100%;
+  margin-left: 3%;
+  
+}
+
+#menu_icon {
+  width: 100%;
+  height: 3px;
+  margin: 3px auto;
+  background-color: #fff;
+}
+
+nav {
+  width: auto;
+  height: 100%;
+  font-size: 13pt;
+  margin-right: 5%;
+}
+nav ul{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+nav li{
+  padding: 5px;
+  margin: 0 10px;
+  height: 100%;
+
+}
+
+.menuCon:hover,
+nav li:hover{
+  background-color: #858383;
+  transform: scale(1.09);
+}
+
+
+
+
+form {
+  background-color: #dfdfdf25;
+  max-width: 300px;
+  height: auto;
+  margin: 5% auto;
+  padding: 5%;
+  text-align: center;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+form input[type='text'],
+form input[type='email'],
+form input[type='password'] {
+  width: 100%;
+  padding: 3px;
+  margin-top: 20px;
+  border: 0;
+  font-size: 16px;
+  border-bottom: 1px solid #b4becb;
+  outline: none;
+}
+
+form div {
+  margin: 20px 0 30px;
+}
+
+.form-div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: auto;
+}
+
+.form-div>button {
+  background: green;
+  color: white;
+}
+
+form input[type='checkbox'],
+a {
+  float: left;
+}
+
+form input[type='submit'] {
+  width: auto;
+  float: right;
+}
+
+
+form p {
+  margin: 0 5px;
+  float: left;
+}
+
+
+
+/* day 2 css*/
+.container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+.card {
+  background-color: #d8d7d78a;
+  width: auto;
+  max-width: 300px;
+  height: auto;
+  margin: 2%;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.grid {
+  display: grid;
+  padding: 2%;
+}
+
+.grid-3c {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-5c {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+
+.profile-imgCon {
+  grid-column: 1;
+  background-color: #4b4646;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.profile-imgCon img {
+  border-radius: 50%;
+
+}
+
+.profile-txtCon {
+  grid-column: 2/span3;
+}
+
+.shop-card {
+  width: 200px;
+  height: auto;
+  margin: 5%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.shop-imgCon {
+  width: 100%;
+  height: 200px;
+  min-height: 150px !important;
+  margin: 0;
+  padding: 0;
+  border-radius: inherit;
+
+}
+
+.shop-imgCon>img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+
+}
+
+.shop-txtCon {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  min-height: 100px;
+  word-break: break-all;
+  text-align: center;
+}
+
+.shop-txtCon>h1,
+.shop-txtCon>p,
+.shop-txtCon>span {
+  margin: 0 4%;
+  padding: 0;
+  text-align: center;
+}
+
+.shop-txtCon>button {
+  background: orange;
+  color: #000;
+  margin-bottom: 2%;
+  border-radius: 5px;
+}
+
+
+
+/* day 3 css.............................*/
+
+.alert {
+  color: #fff;
+  font-weight: bold;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  padding: 1%;
+  text-align: center;
+  text-transform: capitalize;
+  top: 20px;
+  z-index: 1;
+}
+
+.alert-danger {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.alert-success {
+  background: #d4edda;
+  color: #155724;
+}
+
+
+
+
+
+
+
+
+
+#see_all {
+  float: right;
+  color: orange;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 0px 0px 0px 5px;
+}
+
+
+@media (max-width:570px) {
+
+  .container,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .card {
+    width: 70%;
+    margin: 20px 70px;
+  }
+
+  .shop-card {
+    width: 100%;
+    max-width: 90%;
+    float: left;
+  }
+}

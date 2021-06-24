@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form homePage</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <h1> Basic Html Form with javascript </h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ea sunt quasi reiciendis aliquid repudiandae voluptatum deleniti labore quo veritatis!</p>
+  <div>
+    <section >
+      <ul id="users">
+      </ul>
+    </section>
+    <section>
+      <h1 id="alert"></h1>
+    </section>
+  </div>
+
+  <div>
+    <section>
+      <form >
+        <h1>Log In</h1>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+    
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        
+        <a href="http://127.0.0.1:5500/form/forgotPassword.html">Forgot password</a><br/>
+        <span>Don't Have account? </span><a href="http://127.0.0.1:5500/form/signup.html" onclick="handleLogin">Sign Up</a>
+        <button type="submit" class="btn">Log in</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

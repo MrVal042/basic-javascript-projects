@@ -1,0 +1,96 @@
+:root {
+	--primary-bg: #e6e6ee;
+	--btn-bg: #067c7c;
+	--form-bg: #f5f5f5;
+	--btn-color: #fff;
+	--btn-hover: #15c1c7;
+}
+
+/* ii.  | *{}--->*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	-webkit-user-drag: none;
+}
+
+/* iii. | Body--->(fonts, user-select & drag)*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--primary-bg);
+	color: #000;
+	line-height: 1.5;
+
+	/* make contents non-selectable..*/
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+form {
+	background-color: var(--form-bg);
+	width: 500px;
+	max-width: 500px;
+	height: auto;
+	border-radius: 5px;
+	padding: 1rem 2rem;
+	margin: 3rem auto;
+	justify-items: center;
+}
+form h1 {
+	color: var(--btn-bg);
+	margin: 10px auto;
+	width: 40%;
+}
+
+form p {
+	background-color: #15c1c7;
+	width: 60%;
+}
+form a {
+	text-decoration: none;
+}
+.btn {
+	background-color: var(--btn-bg);
+	color: var(--btn-color);
+	width: auto;
+	border-radius: 5px;
+	margin: .5rem 2rem;
+	padding: .5% 5%;
+	font-weight: bold;
+}
+.btn:hover {
+	background-color: var(--btn-hover);
+}
+
+label {
+	font-weight: bolder;
+	margin-right: 25px;
+}
+
+input {
+	border: none;
+	outline: none;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 3px;
+	padding: 2% 0 0 2%;
+	margin-bottom: 15px;
+}
+input[type="radio"] {
+	width: 10%;
+	margin: 1%;
+	padding: 1% 0 0 2%;
+}
+input[type="number"] {
+	width: 15%;
+	margin: 1%;
+	padding: 1% 0 0 2%;
+	font-weight: bolder;
+}
+
+#signup {
+	margin-top: 20px;
+	width: 100%;
+}

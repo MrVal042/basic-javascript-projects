@@ -3,7 +3,7 @@
 coding is all about learnimg and putting it in practice. so below is the list of the basic projects.
 
 ## List of the projects
-1. * [Todo app](https://mrval042.github.io/Basic-Js/Todo%20app/) - The basic web development tutorial
+1. * [Todo app](https://mrval042.github.io/Basic-Js/Todo%20app/) - Todo app with edit,done snd delete function
 2. * [W3c Todo](https://github.com/MrVal042/Basic-Js/W3%20Todo%20list) - The basic web development tutorial
 3 * [W3c school](https://github.com/MrVal042/Basic-Js/acme-web) - The basic web development tutorial
 4. * [W3c school](https://github.com/MrVal042/Basic-Js/auto image) - The basic web development tutorial
